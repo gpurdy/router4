@@ -1,0 +1,30 @@
+<section class="login page">
+    <main class="card">
+      <div><h3 class="center-align"> Login...</h3></div>
+
+      <!-- Note: Login is used only for UI testing. Email/password are not used and no form level validation implemented -->
+      <div class="row">
+        <div class="input-field col s12">
+          <input [(ngModel)]="email" id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+       <div class="row">
+        <div class="input-field col s12">
+          <input [(ngModel)]="password" id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+
+      <div class="row buttons">
+        <a class="waves-effect waves-light btn-large" (click)="login()">Login<i class="material-icons right">arrow_forward</i></a>
+      </div>
+ 
+      <div class="row buttons">
+        <!-- Note: This button will log the user in and then call login(). -->
+        <a id="googleBtn" class="waves-effect waves-light btn-large">Login with Google+<i class="material-icons right">arrow_forward</i></a>
+      </div>
+
+    </main>
+ </section>

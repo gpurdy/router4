@@ -1,0 +1,17 @@
+.home.page {
+    display: flex;
+    flex-direction: row;
+}
+.home.page main {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+}
+
+.home.page main h1 {
+   margin: 10%;
+}
+
+.home.page main .btn-large {
+   margin-left: 20%;
+}

@@ -1,0 +1,12 @@
+<section class="vrplayer">
+    <div class="video-container">
+        <video class="mejs__player" width="100%" height="100%" id="player1"> 
+          <source type="{{type}}" src="{{url}}" />
+        </video>
+    </div>
+    <footer>
+      <a class="btn-floating halfway-fab waves-effect waves-light red left" *ngIf="isPaused()" (click)="onPlay()"><i class="material-icons">play_arrow</i></a>
+      <a class="btn-floating halfway-fab waves-effect waves-light red left" *ngIf="!isPaused()" (click)="onPause()"><i class="material-icons">pause</i></a>
+      <a class="btn-floating halfway-fab waves-effect waves-light red"  (click)="onStop()"><i class="material-icons">stop</i></a>
+    </footer>
+</section>

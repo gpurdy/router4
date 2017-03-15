@@ -1,0 +1,13 @@
+.active {
+    font-weight: bold;
+}
+
+span.user {
+    margin-left: 2em;
+}
+
+span.user img {
+    max-height: 3em;
+    margin: -1em;
+    padding-left: 2em;
+}

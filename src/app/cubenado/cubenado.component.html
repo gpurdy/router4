@@ -1,0 +1,26 @@
+<section class="cubenado" >
+  <canvas #cubenadoCanvas class="video-player"></canvas>
+  
+ 
+  <footer class="controls" (mouseover)="open=true" (mouseleave)="open=false"  (click)="open=!open">
+   <a class="btn-floating waves-effect waves-light red"  (click)="onStop()"><i class="material-icons">stop</i></a>
+   <section [class]="open ? 'overlay opened' : 'overlay closed'">
+      <header class="handle">
+        <strong>Controls <i class="material-icons">arrow_drop_down</i></strong>
+      </header>
+      <strong>Cubes: {{cubes}}</strong> 
+      <div class="range-field">
+          <span>{{minCubes}}</span>
+          <input type="range" [(ngModel)]="cubes" min="{{minCubes}}" max="{{maxCubes}}" (change)="onChanges()" #cNumber />
+          <span>{{maxCubes}}</span>
+      </div>
+      <strong>Speed: {{speed}}</strong>
+      <div class="range-field">
+        <span>{{minSpeed}}</span>
+        <input type="range" [(ngModel)]="speed" min="{{minSpeed}}" max="{{maxSpeed}}" (change)="onChanges()" #sNumber />
+        <span>{{maxSpeed}}</span>
+      </div>
+    </section>
+  </footer>
+</section>
+

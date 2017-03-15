@@ -1,0 +1,9 @@
+.login.page .card {
+    margin: 5%;
+    padding: 5%;
+}
+
+.login.page .card .buttons a {
+    width: 100%;
+
+}
